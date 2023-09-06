@@ -1,0 +1,10 @@
+cp ../sdimage sdimage
+cd USER
+sudo ./mku init
+sudo ./mku login
+cd ../kernel
+./mk
+cd ../driver
+./mk
+rm *.o
+cd ../
